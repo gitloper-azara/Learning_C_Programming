@@ -33,7 +33,7 @@ void initialise(struct stack *stackPtr)
     stackPtr->top = -1;
 }
 
-/* returns true if the stack pointed  to by stackPtr is full */
+/* returns true if the stack pointed to by stackPtr is full */
 int full(struct stack *stackPtr)
 {
     return (stackPtr->top == SIZE - 1);
