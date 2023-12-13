@@ -4,7 +4,7 @@
 /**
  * this code was written by Arup Guha
  * 6/20/07
- * written in COP 3502 to illustrate an array implementation of a stack
+ * written in COP 3502 to illustrate an array implementation of a queue
 */
 
 #define EMPTY -1
