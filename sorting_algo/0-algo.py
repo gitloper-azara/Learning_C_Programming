@@ -14,6 +14,7 @@ def insertionSort(n, list=[]):
 def printList(size, list=[]):
     for i in range(size):
         print(f'{list[i]} ', end='')
+    print()
 
 if __name__ == '__main__':
     lst = [12, 11, 13, 5, 6]
@@ -24,6 +25,5 @@ if __name__ == '__main__':
 
     insertionSort(n, lst)
 
-    print('\nSorted array:')
+    print('Sorted array:')
     printList(n, lst)
-    print()
