@@ -16,7 +16,10 @@ def selectionSort(n, lst=None):
         lst[minIndex] = lst[i]
         lst[i] = temp
 
-def printlst(size, lst=[]):
+def printlst(size, lst=None):
+    if lst is None:
+        lst = []
+
     for i in range(size):
         print(f'{lst[i]} ', end='')
     print()
