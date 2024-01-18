@@ -1,19 +1,25 @@
 #!/usr/bin/python3
 
 
-def insertionSort(n, list=[]):
+def insertionSort(n, lst=None):
+    if lst is None:
+        lst = []
+
     for i in range(n):
-        key = list[i]
+        key = lst[i]
         j = i - 1
 
-        while j >= 0 and list[j] > key:
-            list[j + 1] = list[j]
+        while j >= 0 and lst[j] > key:
+            lst[j + 1] = lst[j]
             j = j - 1
-        list[j + 1] = key
+        lst[j + 1] = key
 
-def printList(size, list=[]):
+def printlst(size, lst=None):
+    if lst is None:
+        lst = []
+
     for i in range(size):
-        print(f'{list[i]} ', end='')
+        print(f'{lst[i]} ', end='')
     print()
 
 if __name__ == '__main__':
@@ -21,9 +27,9 @@ if __name__ == '__main__':
     n = len(lst)
 
     print('Original array:')
-    printList(n, lst)
+    printlst(n, lst)
 
     insertionSort(n, lst)
 
     print('Sorted array:')
-    printList(n, lst)
+    printlst(n, lst)
